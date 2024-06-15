@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+  background-color: #f0f4f8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.TodoWrapper {
+  background-color: lightpink;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  max-width: 90%;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+.TodoWrapper h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+  color: blueviolet;
+  margin-bottom: 20px;
+}
+
+.TodoForm input {
+  width: 75%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  background-color: bisque;
+  
+}
+
+.TodoForm button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: blueviolet;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.TodoForm button:hover {
+  background-color: lightseagreen;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+}
+
+.Todo p {
+  margin: 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.Todo p.completed {
+  text-decoration: line-through;
+  color: #9e9e9e;
+}
+
+.Todo button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.Todo button.edit {
+  background-color: #f0ad4e;
+  color: #ffffff;
+}
+
+.Todo button.edit:hover {
+  background-color: #ec971f;
+}
+
+.Todo button.delete {
+  background-color: #d9534f;
+  color: #ffffff;
+}
+
+.Todo button.delete:hover {
+  background-color: lightpink;
+}
+
+.EditTodoForm input {
+  width: 75%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.EditTodoForm button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0275d8;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.EditTodoForm button:hover {
+  background-color: lightseagreen;
+}
+
+button.filter, button.sort {
+  margin: 8px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: lightcoral;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button.filter:hover, button.sort:hover {
+  background-color: #31b0d5;
+}
